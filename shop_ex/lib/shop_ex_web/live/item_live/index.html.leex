@@ -1,0 +1,31 @@
+<h1>Inventory Items</h1>
+
+<%= if @live_action in [:new, :edit] do %>
+  <%= live_modal @socket, ShopExWeb.ItemLive.FormComponent,
+    id: @item.id || :new,
+    title: @page_title,
+    action: @live_action,
+    item: @item,
+    return_to: Routes.item_index_path(@socket, :index) %>
+<% end %>
+
+<table>
+  <tbody id="items">
+      <tr>
+        <th>Name</th>
+        <th>Manage Inventory</th>
+      </tr>
+      <tr>
+        <%= for item <- @items do %>
+        <td><%= item.name %></td>
+        <td id="item-<%= item.id %>">
+          <span><%= live_redirect "Show", to: Routes.item_show_path(@socket, :show, item) %></span> |
+          <span><%= live_patch "Edit", to: Routes.item_index_path(@socket, :edit, item) %></span> |
+          <span><%= link "Recall Item", to: "#", phx_click: "delete", phx_value_id: item.id, data: [confirm: "Are you sure?"] %></span>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<span><%= live_patch "New Item", to: Routes.item_index_path(@socket, :new) %></span>

@@ -1,0 +1,18 @@
+2020-08-23 13:08:07 =SUPERVISOR REPORT====
+     Supervisor: {<0.4698.0>,'Elixir.Supervisor.Default'}
+     Context:    shutdown_error
+     Reason:     noproc
+     Offender:   [{pid,<0.4700.0>},{id,#Ref<0.465190096.3646423045.168860>},{mfargs,{'Elixir.Phoenix.LiveView.Channel',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2020-08-23 13:09:38 =SUPERVISOR REPORT====
+     Supervisor: {<0.568.0>,'Elixir.Supervisor.Default'}
+     Context:    shutdown_error
+     Reason:     noproc
+     Offender:   [{pid,<0.570.0>},{id,#Ref<0.359129778.962592770.49674>},{mfargs,{'Elixir.Phoenix.LiveView.Channel',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2020-08-23 13:18:22 =SUPERVISOR REPORT====
+     Supervisor: {<0.563.0>,'Elixir.Supervisor.Default'}
+     Context:    shutdown_error
+     Reason:     {shutdown,closed}
+     Offender:   [{pid,<0.565.0>},{id,#Ref<0.1651093806.4185128961.172385>},{mfargs,{'Elixir.Phoenix.LiveView.Channel',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+

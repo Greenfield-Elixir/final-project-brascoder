@@ -1,0 +1,30 @@
+2020-08-23 13:08:07.595 [error] <0.4698.0> Supervisor {<0.4698.0>,'Elixir.Supervisor.Default'} had child #Ref<0.465190096.3646423045.168860> started with {'Elixir.Phoenix.LiveView.Channel',start_link,undefined} at <0.4700.0> exit with reason noproc in context shutdown_error
+2020-08-23 13:09:38.698 [error] <0.568.0> Supervisor {<0.568.0>,'Elixir.Supervisor.Default'} had child #Ref<0.359129778.962592770.49674> started with {'Elixir.Phoenix.LiveView.Channel',start_link,undefined} at <0.570.0> exit with reason noproc in context shutdown_error
+2020-08-23 13:18:22.714 [error] <0.563.0> Supervisor {<0.563.0>,'Elixir.Supervisor.Default'} had child #Ref<0.1651093806.4185128961.172385> started with {'Elixir.Phoenix.LiveView.Channel',start_link,undefined} at <0.565.0> exit with reason {shutdown,closed} in context shutdown_error
+2020-08-23 13:43:12.751 [info] <0.44.0> Application lager started on node nonode@nohost
+2020-08-23 13:43:12.762 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2020-08-23 13:43:12.775 [info] <0.44.0> Application sasl started on node nonode@nohost
+2020-08-23 13:43:12.780 [info] <0.44.0> Application tools started on node nonode@nohost
+2020-08-23 13:43:12.782 [info] <0.44.0> Application jsx started on node nonode@nohost
+2020-08-23 13:43:12.791 [info] <0.44.0> Application ranch started on node nonode@nohost
+2020-08-23 13:43:12.796 [info] <0.44.0> Application recon started on node nonode@nohost
+2020-08-23 13:43:12.827 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2020-08-23 13:43:12.827 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2020-08-23 13:43:12.832 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2020-08-23 13:43:12.832 [info] <0.44.0> Application amqp started on node nonode@nohost
+2020-08-23 13:43:12.835 [info] <0.44.0> Application poolboy started on node nonode@nohost
+2020-08-23 13:43:12.835 [info] <0.44.0> Application ex_rabbit_pool started on node nonode@nohost
+2020-08-23 13:43:12.840 [info] <0.44.0> Application connection started on node nonode@nohost
+2020-08-23 13:43:12.846 [info] <0.44.0> Application db_connection started on node nonode@nohost
+2020-08-23 13:43:12.853 [info] <0.44.0> Application postgrex started on node nonode@nohost
+2020-08-23 13:43:12.855 [info] <0.44.0> Application ecto_sql started on node nonode@nohost
+2020-08-23 13:43:12.857 [info] <0.44.0> Application phoenix_html started on node nonode@nohost
+2020-08-23 13:43:12.861 [info] <0.44.0> Application cowlib started on node nonode@nohost
+2020-08-23 13:43:12.866 [info] <0.44.0> Application cowboy started on node nonode@nohost
+2020-08-23 13:43:12.867 [info] <0.44.0> Application plug_cowboy started on node nonode@nohost
+2020-08-23 13:43:12.869 [info] <0.44.0> Application phoenix_live_view started on node nonode@nohost
+2020-08-23 13:43:12.872 [info] <0.44.0> Application phoenix_live_dashboard started on node nonode@nohost
+2020-08-23 13:43:12.876 [info] <0.44.0> Application file_system started on node nonode@nohost
+2020-08-23 13:43:12.886 [info] <0.44.0> Application phoenix_live_reload started on node nonode@nohost
+2020-08-23 13:43:12.888 [info] <0.44.0> Application phoenix_ecto started on node nonode@nohost
+2020-08-23 13:43:12.958 [info] <0.44.0> Application shop_ex started on node nonode@nohost
