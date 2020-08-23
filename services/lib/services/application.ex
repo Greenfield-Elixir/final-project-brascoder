@@ -1,4 +1,4 @@
-defmodule ShopEx.Application do
+defmodule Services.Application do
   # See https://hexdocs.pm/elixir/Application.html
   # for more information on OTP Applications
   @moduledoc false
@@ -12,26 +12,26 @@ defmodule ShopEx.Application do
     )
     children = [
       # Start the Ecto repository
-      ShopEx.Repo,
+      Services.Repo,
       # Start the Telemetry supervisor
-      ShopExWeb.Telemetry,
+      ServicesWeb.Telemetry,
       # Start the PubSub system
-      {Phoenix.PubSub, name: ShopEx.PubSub},
+      {Phoenix.PubSub, name: Services.PubSub},
       # Start the Endpoint (http/https)
-      ShopExWeb.Endpoint,
-      ShopEx.PublisherPool
+      ServicesWeb.Endpoint,
+      Services.ConsumerPool
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
     # for other strategies and supported options
-    opts = [strategy: :one_for_one, name: ShopEx.Supervisor]
+    opts = [strategy: :one_for_one, name: Services.Supervisor]
     Supervisor.start_link(children, opts)
   end
 
   # Tell Phoenix to update the endpoint configuration
   # whenever the application is updated.
   def config_change(changed, _new, removed) do
-    ShopExWeb.Endpoint.config_change(changed, removed)
+    ServicesWeb.Endpoint.config_change(changed, removed)
     :ok
   end
 end
